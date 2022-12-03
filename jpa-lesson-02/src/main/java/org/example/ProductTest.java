@@ -6,9 +6,7 @@ import entity.User;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import java.util.Arrays;
 import java.util.Date;
-import java.util.List;
 
 public class ProductTest {
 
@@ -27,22 +25,27 @@ public class ProductTest {
         Product shoe = new Product("Ayakkabı",560,4,new Date());
 
         User satici = new User("Musluhan","Cavus",new Date());
+        User satici2 = new User("Jeff","Bezos",new Date());
 
         laptop.setUser(satici);
         kanepe.setUser(satici);
         lamba.setUser(satici);
         araba.setUser(satici);
         tshirt.setUser(satici);
+        kitap.setUser(satici2);
+        kalem.setUser(satici2);
+        shoe.setUser(satici2);
 
         entityManager.getTransaction().begin();
-/*
-        entityManager.persist(satici);*/
 
         entityManager.persist(laptop);
         entityManager.persist(kanepe);
         entityManager.persist(lamba);
         entityManager.persist(araba);
         entityManager.persist(tshirt);
+        entityManager.persist(kitap);
+        entityManager.persist(kalem);
+        entityManager.persist(shoe);
 
 
         entityManager.getTransaction().commit();
