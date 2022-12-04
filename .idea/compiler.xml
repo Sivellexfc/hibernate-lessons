@@ -11,7 +11,11 @@
         <module name="jpa-lesson-01" />
         <module name="Jpa-lessons" />
         <module name="jpa-lesson-04-ManyToMany" />
+        <module name="jpa-lesson-05-jpql" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jpa-lesson-04-jpql" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

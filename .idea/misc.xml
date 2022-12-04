@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/jpa-lesson-02/pom.xml" />
         <option value="$PROJECT_DIR$/jpa-lesson-03/pom.xml" />
         <option value="$PROJECT_DIR$/jpa-lesson-04-ManyToMany/pom.xml" />
+        <option value="$PROJECT_DIR$/jpa-lesson-04-jpql/pom.xml" />
+        <option value="$PROJECT_DIR$/jpa-lesson-05-jpql/pom.xml" />
       </list>
     </option>
   </component>
